@@ -1,9 +1,9 @@
 .wrapper {
   background: 
-  /* top, transparent chartreuse, faked with gradient */ 
-  linear-gradient(
-    rgb(180, 208, 103, .9), 
-    rgb(180, 208, 103, .9)
+  /* top, transparent chartreuse, radial grandient so the background image is more visible at the center of the page */ 
+  radial-gradient(
+    rgb(180, 208, 103, .85), 
+    rgb(180, 208, 103, 1)
   ),
   /* bottom, image */
   url("http://www.carasaven.com/wp-content/uploads/2017/02/CaraSaven-BananaLeavesGraphic-Wallpaper.jpg");
@@ -14,4 +14,18 @@
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
+  padding-bottom: 10px;
 }
+/*css for very small screen widths*/
+@media only screen and (max-width:554px) {
+  .wrapper{
+    padding-bottom: 60px;
+  }
+}
+/*css for very small screen widths*/
+@media only screen and (max-width:447px) {
+  .wrapper{
+    padding-bottom: 10px;
+  }
+}
+

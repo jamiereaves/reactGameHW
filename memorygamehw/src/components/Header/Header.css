@@ -1,18 +1,78 @@
 .navbar{
   width:100%;
   height:100px;
-  background: #8A152F;
+  background: linear-gradient(#49150a,#8A152F);
   color: #D39078;
   margin: 0 0 5px 0;
   box-shadow: 0 3px 6px #301412, 0 3px 6px #301412;
+  text-align: center;
 }
 
 .navbar-brand{
   font-family: 'Shrikhand', cursive;
-  font-size: 2.8em;
+  font-size: 3.0em;
+  margin-left: 5%;
 }
 
 .scoreCard{
   font-family: 'Shrikhand', cursive;
-  font-size: 1.0em;
+  font-size: 1.1em;
+  margin-right: 5%;
+}
+/*css for small screen widths*/
+@media only screen and (min-width:1111px) {
+  .navbar-brand {
+    margin-left: 7%;
+  }
+  .scoreCard {
+    margin-right: 7%;
+  }
+}/*css for small screen widths*/
+@media only screen and (max-width:872px) {
+  .navbar-brand {
+    font-size: 2.8em;
+    margin-left: 2.5%;
+    margin-right: 5px;
+  }
+  .scoreCard {
+    font-size: 1.0em;
+    margin-right: 2.5%;
+    margin-left: 5px;
+  }
+}
+/*css for small screen widths*/
+@media only screen and (max-width:752px) {
+  .navbar-brand {
+    font-size: 2.5em;
+  }
+  .scoreCard {
+    font-size: .80em;
+  }
+}
+/*css to fix wierdness*/
+@media only screen and (max-width:642px) {
+  .navbar-brand {
+    margin-left: 1%;
+    margin-right: 5px;
+  }
+  .scoreCard {
+    margin-right: 1%;
+    margin-left: 5px;
+  }
+}
+/*css for very small screen widths*/
+@media only screen and (max-width:602px) {
+  .navbar-brand {
+    margin: auto;
+  }
+  .scoreCard {
+    margin: auto;
+    font-size: .90em;
+  }
+}
+/*css for very small screen widths*/
+@media only screen and (max-width:602px) {
+  .navbar-brand {
+    font-size: 2.0em;
+  }
 }

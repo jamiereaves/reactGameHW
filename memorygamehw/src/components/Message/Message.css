@@ -22,3 +22,16 @@
   font-family: 'Averia Serif Libre', cursive;
   justify-content: center;
 }
+
+/*css for very small screen widths*/
+@media only screen and (max-width:752px) {
+  .title {
+    font-size:1.2em;
+  }
+}
+/*css for very small screen widths*/
+@media only screen and (max-width:554px) {
+  .title {
+    font-size:1.1em;
+  }
+}

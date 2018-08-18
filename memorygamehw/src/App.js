@@ -33,7 +33,7 @@ class App extends Component {
               });
             }
             console.log("score: " + this.state.score)});
-          this.setState({message: "You guessed correctly!"}, function () {
+          this.setState({message: "You chose "+ targetCard[0].name + "."}, function () {
             console.log(this.state.message);
           })
         }
@@ -67,18 +67,13 @@ class App extends Component {
 
   render() {
     return (
-      /*<div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>*/
         <div className="container-fluid">
         <Wrapper>
           <Header className="d-flex justify-content-between">
             <span>SCORE: {this.state.score}  ||  HIGH SCORE: {this.state.highScore}</span>
           </Header>
           <Message>{this.state.message}</Message>
-            {this.state.cards.slice(0,12).map(card => (
+            {this.state.cards.slice(0,16).map(card => (
             <Card
               clickHandler={this.clickHandler}
               id={card.id}

@@ -1,8 +1,24 @@
 .footer{
-  background: #8A152F;
+  background: linear-gradient(#8A152F, #49150a);
 }
 
 .footerText{
   color: #D39078;
   font-family: 'Shrikhand', cursive;
+}
+
+.rightSide{
+  margin-left: 15px;
+}
+/*css for small screen widths*/
+@media only screen and (max-width:752px) {
+  .footerText{
+    font-size: 0.9em;
+  }
+}
+/*css for small screen widths*/
+@media only screen and (max-width:404px) {
+  .footerText{
+    font-size: 0.8em;
+  }
 }
